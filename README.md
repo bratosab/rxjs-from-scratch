@@ -7,4 +7,4 @@ Subjects : next, multicast, behaviourSubjects
 ![RxJS from scratch](./assets/rxjs.png)
 
 ## Presentation
-coming soon
+https://docs.google.com/presentation/d/1C8N7bAOoqylVPr4R3t-dvlYc5vpaNXZ9IbvG0_A2-JM/edit?usp=sharing
