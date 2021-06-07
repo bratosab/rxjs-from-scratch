@@ -5,7 +5,6 @@ import {
   of,
   forkJoin,
 } from 'rxjs'
-import { delay } from 'rxjs/operators'
 
 const sourceOne$ = of('Hello', 'Britney', 'RxJS')
 const sourceTwo$ = of(
