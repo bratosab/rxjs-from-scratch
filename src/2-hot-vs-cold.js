@@ -6,7 +6,7 @@ import { share, shareReplay, publish } from 'rxjs/operators'
  * Where data is created inside of it
  * Each Sub gets a diffrent number
  */
-const cold$ = Observable.create((observer) => {
+const cold$ = new Observable((observer) => {
   observer.next(Math.random())
 })
 
@@ -19,7 +19,7 @@ const cold$ = Observable.create((observer) => {
  * Each Sub gets same number
  */
 const x = Math.random()
-const hot$ = Observable.create((observer) => {
+const hot$ = new Observable((observer) => {
   observer.next(x)
 })
 
@@ -30,7 +30,7 @@ const hot$ = Observable.create((observer) => {
  * Hot Observable without decoupling data
  * Using publish to emit data only when connect is called
  */
-const cold2$ = Observable.create((observer) => {
+const cold2$ = new Observable((observer) => {
   observer.next(Math.random())
 })
 

@@ -4,7 +4,7 @@ import { catchError, retry, map } from 'rxjs/operators'
 /**
  * Basic observable
  */
-const observable$ = Observable.create((observer) => {
+const observable$ = new Observable((observer) => {
   observer.next('Bonjour !')
   observer.next('Bonsoir !')
   observer.next('Bonne nuit !')
